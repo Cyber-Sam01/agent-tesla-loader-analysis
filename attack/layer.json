@@ -1,0 +1,165 @@
+{
+	"name": "rPEq.exe (Agent Tesla loader) – static analysis",
+	"versions": {
+		"attack": "20",
+		"navigator": "5.3.2",
+		"layer": "4.5"
+	},
+	"domain": "enterprise-attack",
+	"description": "SHA-256\n412bad1c87f5d4e8c3a6955e942628b9615931cc2399c2b316326d15e3a84775",
+	"filters": {
+		"platforms": [
+			"Windows",
+			"IaaS",
+			"Linux",
+			"macOS",
+			"SaaS",
+			"ESXi",
+			"Network Devices",
+			"PRE",
+			"Containers",
+			"Office Suite",
+			"Identity Provider"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": true,
+		"countUnscored": false,
+		"expandedSubtechniques": "none"
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T1140",
+			"tactic": "stealth",
+			"color": "#e60d0d",
+			"comment": "Hex tokens decoding to eQTo, plus the extractor; see 3.5, 3.7",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1036",
+			"tactic": "stealth",
+			"color": "#636363",
+			"comment": "see 3.4, 3.5",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1620",
+			"tactic": "stealth",
+			"color": "#636363",
+			"comment": "capa; see 3.6",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "stealth",
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1497.001",
+			"tactic": "stealth",
+			"color": "#bdbdbd",
+			"comment": "VirusTotal tags; 3.3",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.001",
+			"tactic": "discovery",
+			"color": "#bdbdbd",
+			"comment": "VirusTotal tags; 3.3",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.003",
+			"tactic": "stealth",
+			"color": "#bdbdbd",
+			"comment": "VirusTotal tags; 3.6",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1497.003",
+			"tactic": "discovery",
+			"color": "#bdbdbd",
+			"comment": "VirusTotal tags; 3.6",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027",
+			"tactic": "stealth",
+			"color": "#636363",
+			"comment": "DIE obfuscation flag, entropy 7.75 on .text, 92% of the file in a resource, hex-encoded resource name",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": true
+		},
+		{
+			"techniqueID": "T1027.009",
+			"tactic": "stealth",
+			"color": "#fc3b3b",
+			"comment": "Payload apparently carried inside the image resource; see 3.4, 3.7",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1027.003",
+			"tactic": "stealth",
+			"color": "#fc3b3b",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [],
+	"metadata": [],
+	"links": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false,
+	"selectVisibleTechniques": false
+}
