@@ -39,7 +39,6 @@ I'd rather be clear about the limits than overclaim.
 - **The malware family.** The sample is *tagged* Agent Tesla, but I never reached the hidden second stage.
 - **Whether the hidden data is true steganography** or raw pixel values. I did not read the pixel-reader class to the end.
 - **Network behavior.** My Wireshark capture was lost when REMnux crashed.
-- **Persistence.** No Run-key entries appeared, but I did not check scheduled tasks or services.
 - **Whether the Defender exclusion actually worked.**
 
 ## 🧪 The lab
